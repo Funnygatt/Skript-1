@@ -203,6 +203,10 @@ public class DelayedChangeBlock implements Block {
 			});
 		}
 	}
+    @Override
+    public void setType(final Material type, final boolean applyPhysics){
+        newState.setType(type);
+    }
 	
 	@Override
 	public boolean setTypeId(final int type) {

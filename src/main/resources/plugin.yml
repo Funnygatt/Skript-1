@@ -1,14 +1,10 @@
-
 name: Skript
-
 description: Customize Minecraft's mechanics with simple scripts written in plain English sentences.
-
-author: Njol
+authors: [Njol, Funnygatt, ffell2009]
 website: http://njol.ch/projects/skript
-
 main: ch.njol.skript.Skript
 
-version: ${project.version}
+version: 3.0 Legacy Edition
 
 commands:
     skript:
@@ -17,7 +13,7 @@ commands:
         permission: skript.admin
         usage: /skript help
 
-soft-depend: [SQLibrary, Vault, WorldGuard, Factions]
+soft-depend: [SQLibrary]
 
 permissions:
     skript.*:
@@ -32,6 +28,3 @@ permissions:
     skript.admin:
         default: op
         description: Allows to use administrative commands and to recieve notifications of new versions.
-#    skript.config:
-#        description: allows to modify the configuration files via commands
-#        default: false

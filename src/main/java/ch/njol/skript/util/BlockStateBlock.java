@@ -65,7 +65,7 @@ public class BlockStateBlock implements Block {
 		this.state = state;
 		this.delayChanges = delayChanges;
 	}
-	
+
 	@Override
 	public void setMetadata(final String metadataKey, final MetadataValue newMetadataValue) {
 		state.setMetadata(metadataKey, newMetadataValue);
@@ -202,6 +202,11 @@ public class BlockStateBlock implements Block {
 			state.setType(type);
 		}
 	}
+
+    @Override
+    public void setType(final Material type, final boolean applyPhysics){
+        state.setType(type);
+    }
 	
 	@Override
 	public boolean setTypeId(final int type) {

@@ -1,6 +1,6 @@
 name: Skript
 description: Customize Minecraft's mechanics with simple scripts written in plain English sentences.
-authors: [Njol, Funnygatt, ffell2009]
+authors: [Njol, Funnygatt, nfell2009]
 website: http://njol.ch/projects/skript
 main: ch.njol.skript.Skript
 
